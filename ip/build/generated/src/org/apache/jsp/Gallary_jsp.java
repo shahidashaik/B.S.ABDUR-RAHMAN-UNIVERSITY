@@ -1,0 +1,276 @@
+package org.apache.jsp;
+
+import javax.servlet.*;
+import javax.servlet.http.*;
+import javax.servlet.jsp.*;
+
+public final class Gallary_jsp extends org.apache.jasper.runtime.HttpJspBase
+    implements org.apache.jasper.runtime.JspSourceDependent {
+
+  private static final JspFactory _jspxFactory = JspFactory.getDefaultFactory();
+
+  private static java.util.List<String> _jspx_dependants;
+
+  private org.glassfish.jsp.api.ResourceInjector _jspx_resourceInjector;
+
+  public java.util.List<String> getDependants() {
+    return _jspx_dependants;
+  }
+
+  public void _jspService(HttpServletRequest request, HttpServletResponse response)
+        throws java.io.IOException, ServletException {
+
+    PageContext pageContext = null;
+    HttpSession session = null;
+    ServletContext application = null;
+    ServletConfig config = null;
+    JspWriter out = null;
+    Object page = this;
+    JspWriter _jspx_out = null;
+    PageContext _jspx_page_context = null;
+
+    try {
+      response.setContentType("text/html;charset=UTF-8");
+      pageContext = _jspxFactory.getPageContext(this, request, response,
+      			null, true, 8192, true);
+      _jspx_page_context = pageContext;
+      application = pageContext.getServletContext();
+      config = pageContext.getServletConfig();
+      session = pageContext.getSession();
+      out = pageContext.getOut();
+      _jspx_out = out;
+      _jspx_resourceInjector = (org.glassfish.jsp.api.ResourceInjector) application.getAttribute("com.sun.appserv.jsp.resource.injector");
+
+      out.write("\n");
+      out.write("\n");
+      out.write("\n");
+      out.write("<!DOCTYPE html>\n");
+      out.write("<html>\n");
+      out.write("    <head>\n");
+      out.write("        <meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\">\n");
+      out.write("        <title>TBAK</title>\n");
+      out.write("         <style>\n");
+      out.write(" #section{\n");
+      out.write("\tbackground: url(images/h1.png) no-repeat top left;\n");
+      out.write("\twidth: 1032px;\n");
+      out.write("\theight: 317px;\n");
+      out.write("}\n");
+      out.write("            #wrap{\n");
+      out.write("\tborder: 22px solid #ffffff;\n");
+      out.write("\twidth: 1032px;\n");
+      out.write("\tmargin: 0 auto;\n");
+      out.write("\tbackground: #ffffff;\n");
+      out.write("        height: 800px;\n");
+      out.write("}\n");
+      out.write("body{\t\n");
+      out.write("    font-family: Arial, Helvetica, sans-serif;\n");
+      out.write("    font-size: 12px;\n");
+      out.write("    line-height: 17px;\n");
+      out.write("    color: #ffffff;\n");
+      out.write("    background: #0a6a5b url(images/bg.jpg);\n");
+      out.write("}\n");
+      out.write("#slider a {\n");
+      out.write("\tborder:0;\n");
+      out.write("\tdisplay:block;\n");
+      out.write("}\n");
+      out.write("\n");
+      out.write(".nivo-controlNav {\n");
+      out.write("\tposition:absolute;\n");
+      out.write("\tleft:260px;\n");
+      out.write("\tbottom:-42px;\n");
+      out.write("\tdisplay: none;\n");
+      out.write("}\n");
+      out.write(".nivoSlider {\n");
+      out.write("\tposition:relative;\n");
+      out.write("}\n");
+      out.write(".nivo-controlNav a.active {\n");
+      out.write("\tbackground-position:0 -22px;\n");
+      out.write("}\n");
+      out.write(".nivo-directionNav a {\n");
+      out.write("\tdisplay:block;\n");
+      out.write("\twidth:30px;\n");
+      out.write("\theight:30px;\n");
+      out.write("\tbackground:url(images/arrows.png) no-repeat;\n");
+      out.write("\ttext-indent:-9999px;\n");
+      out.write("\tborder:0;\n");
+      out.write("}\n");
+      out.write("a.nivo-nextNav {\n");
+      out.write("\tbackground-position:-30px 0;\n");
+      out.write("\tright:15px;\n");
+      out.write("}\n");
+      out.write("a.nivo-prevNav {\n");
+      out.write("\tleft:15px;\n");
+      out.write("}\n");
+      out.write(".nivo-caption {\n");
+      out.write("    text-shadow:none;\n");
+      out.write("    font-family: Helvetica, Arial, sans-serif;\n");
+      out.write("}\n");
+      out.write(".nivo-caption a { \n");
+      out.write("    color:#efe9d1;\n");
+      out.write("    text-decoration:underline;\n");
+      out.write("}\n");
+      out.write("#slider-wrapper {\n");
+      out.write("    background:url(images/top.jpg) no-repeat;\n");
+      out.write("    width: 1032px;\n");
+      out.write("    height: 317px;\n");
+      out.write("    margin:0 auto;\n");
+      out.write("}\n");
+      out.write("\n");
+      out.write("#slider {\n");
+      out.write("\tposition:relative;\n");
+      out.write("    width: 1032px;\n");
+      out.write("    height: 317px;\n");
+      out.write("\tbackground:url(images/loading.gif) no-repeat 50% 50%;\n");
+      out.write("}\n");
+      out.write("#header {\n");
+      out.write("    background-color:black;\n");
+      out.write("    color:white;\n");
+      out.write("   \n");
+      out.write("   \n");
+      out.write("height:190px;\n");
+      out.write("width: 100%;\n");
+      out.write("}\n");
+      out.write("\n");
+      out.write("#slider-wrapper {\n");
+      out.write("    background:url(images/top.jpg) no-repeat;\n");
+      out.write("    width: 1032px;\n");
+      out.write("    height: 317px;\n");
+      out.write("    margin:0 auto;\n");
+      out.write("}\n");
+      out.write(".nivoSlider {\n");
+      out.write("\tposition:relative;\n");
+      out.write("}\n");
+      out.write(".nivoSlider img {\n");
+      out.write("\tposition:absolute;\n");
+      out.write("\ttop:0px;\n");
+      out.write("\tleft:0px;\n");
+      out.write("}\n");
+      out.write("/* If an image is wrapped in a link */\n");
+      out.write(".nivoSlider a.nivo-imageLink {\n");
+      out.write("\tposition:absolute;\n");
+      out.write("\ttop:0px;\n");
+      out.write("\tleft:0px;\n");
+      out.write("\twidth:100%;\n");
+      out.write("\theight:100%;\n");
+      out.write("\tborder:0;\n");
+      out.write("\tpadding:0;\n");
+      out.write("\tmargin:0;\n");
+      out.write("\tz-index:60;\n");
+      out.write("\tdisplay:none;\n");
+      out.write("}\n");
+      out.write("/* The slices in the Slider */\n");
+      out.write(".nivo-slice {\n");
+      out.write("\tdisplay:block;\n");
+      out.write("\tposition:absolute;\n");
+      out.write("\tz-index:50;\n");
+      out.write("\theight:100%;\n");
+      out.write("}\n");
+      out.write("/* Caption styles */\n");
+      out.write(".nivo-caption {\n");
+      out.write("\tposition:absolute;\n");
+      out.write("\tleft:0px;\n");
+      out.write("\tbottom:0px;\n");
+      out.write("\tbackground:#000;\n");
+      out.write("\tcolor:#fff;\n");
+      out.write("\topacity:0.8; /* Overridden by captionOpacity setting */\n");
+      out.write("\twidth:100%;\n");
+      out.write("\tz-index:89;\n");
+      out.write("}\n");
+      out.write(".nivo-caption p {\n");
+      out.write("\tpadding:5px;\n");
+      out.write("\tmargin:0;\n");
+      out.write("}\n");
+      out.write(".nivo-caption a {\n");
+      out.write("\tdisplay:inline !important;\n");
+      out.write("}\n");
+      out.write(".nivo-html-caption {\n");
+      out.write("    display:none;\n");
+      out.write("}\n");
+      out.write("/* Direction nav styles (e.g. Next & Prev) */\n");
+      out.write(".nivo-directionNav a {\n");
+      out.write("\tposition:absolute;\n");
+      out.write("\ttop:45%;\n");
+      out.write("\tz-index:99;\n");
+      out.write("\tcursor:pointer;\n");
+      out.write("}\n");
+      out.write(".nivo-prevNav {\n");
+      out.write("\tleft:0px;\n");
+      out.write("}\n");
+      out.write(".nivo-nextNav {\n");
+      out.write("\tright:0px;\n");
+      out.write("}\n");
+      out.write("/* Control nav styles (e.g. 1,2,3...) */\n");
+      out.write(".nivo-controlNav a {\n");
+      out.write("\tposition:relative;\n");
+      out.write("\tz-index:99;\n");
+      out.write("\tcursor:pointer;\n");
+      out.write("}\n");
+      out.write(".nivo-controlNav a.active {\n");
+      out.write("\tfont-weight:bold;\n");
+      out.write("}\n");
+      out.write("\n");
+      out.write("#footer {\n");
+      out.write("    background-color:black;\n");
+      out.write("    color:white;\n");
+      out.write("    clear:both;\n");
+      out.write("    text-align:center;\n");
+      out.write("   \t \t \n");
+      out.write("}\n");
+      out.write("</style>\n");
+      out.write("    </head>\n");
+      out.write("    <body>\n");
+      out.write("        <div id=\"header\">\n");
+      out.write("   \n");
+      out.write("  <!-- <img src=\"");
+      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${pageContext.request.contextPath}", java.lang.String.class, (PageContext)_jspx_page_context, null));
+      out.write("\\image\\logo1.jpg\" width=\"500px\" height=\"100px\"/>-->\n");
+      out.write("   <img src=\"image/logo1.jpg\" alt=\"\" />\n");
+      out.write("   <p align=\"right\">\n");
+      out.write("<a style=\"color:white\" href=\"login.jsp\">Login</a><br><br>\n");
+      out.write("<a style=\"color:white\" href=\"register.jsp\">Register</a></p>\n");
+      out.write("</div>\n");
+      out.write("        <div id=\"wrap\">\n");
+      out.write("    \n");
+      out.write("        <div id=\"section\">\n");
+      out.write("\t\t\t\t\n");
+      out.write("\t\t\t\t   \n");
+      out.write("\t<div id=\"wrapper\">\n");
+      out.write("\t\t\t\t<div id=\"slider-wrapper\">        \n");
+      out.write("\t\t\t\t\t<div id=\"slider\" class=\"nivoSlider\">\n");
+      out.write("\t\t\t\t\t\t<img src=\"images/h1.jpg\" alt=\"\" />\n");
+      out.write("\t\t\t\t\t\t<img src=\"images/h3.jpg\" alt=\"\"/>\n");
+      out.write("\t\t\t\t\t\t<img src=\"image/indeximage.jpg\" alt=\"\" />\n");
+      out.write("\t\t\t\t\t\t<img src=\"images/h4.jpg\" alt=\"\" />\n");
+      out.write("\t\t\t\t\t</div>        \n");
+      out.write("\t\t\t\t</div>\n");
+      out.write("\t\t\t</div>\n");
+      out.write("\t\t\t\n");
+      out.write("<script type=\"text/javascript\" src=\"lib/jquery-1.4.3.min.js\"></script>\n");
+      out.write("    <script type=\"text/javascript\" src=\"lib/jquery.nivo.slider.pack.js\"></script>\n");
+      out.write("    <script type=\"text/javascript\">\n");
+      out.write("    $(window).load(function() {\n");
+      out.write("        $('#slider').nivoSlider();\n");
+      out.write("    });\n");
+      out.write("    </script>\n");
+      out.write("\t\t\t\t\n");
+      out.write("\t\t\t\t</div>\n");
+      out.write("        </div>\n");
+      out.write("\n");
+      out.write("<div id=\"footer\">\n");
+      out.write("Copyright ©tbakwomenshostel.com\n");
+      out.write("</div>\n");
+      out.write("    </body>\n");
+      out.write("</html>\n");
+    } catch (Throwable t) {
+      if (!(t instanceof SkipPageException)){
+        out = _jspx_out;
+        if (out != null && out.getBufferSize() != 0)
+          out.clearBuffer();
+        if (_jspx_page_context != null) _jspx_page_context.handlePageException(t);
+        else throw new ServletException(t);
+      }
+    } finally {
+      _jspxFactory.releasePageContext(_jspx_page_context);
+    }
+  }
+}
